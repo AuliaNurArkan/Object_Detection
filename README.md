@@ -12,14 +12,11 @@ Aplikasi Object Detection berbasis YOLOv12 dengan Streamlit untuk deteksi Constr
 ```
 purwa_yolo/
 ├── models/                          # Folder untuk model .pt (gitignored)
-│   ├── best_construction.pt
-│   ├── best_vehicle.pt
-│   └── best_fruit.pt
+│   └── best_vehicle.pt
 ├── src/purwa_yolo/                  # Source code aplikasi
 │   ├── __init__.py
 │   └── main.py                      # Streamlit app
 ├── training_code/                   # Jupyter notebooks untuk training
-│   ├── Train YOLOv12 Construction.ipynb
 │   └── Train YOLOv12 Vehicle.ipynb
 ├── tests/
 ├── pyproject.toml                   # Poetry dependencies
