@@ -35,7 +35,7 @@ def detector_pipeline_pillow(image_bytes, model):
     pil_image = Image.open(BytesIO(image_bytes)).convert("RGB")
     
     # Run inference dengan parameter "Sweet Spot"
-    results = model(pil_image, conf=0.1, imgsz=3560, iou=0.8, verbose=False)[0]
+    results = model(pil_image, conf=0.1, imgsz=1024, iou=0.8, verbose=False)[0]
     detections = sv.Detections.from_ultralytics(results).with_nms()
     
     # Get cached annotators
